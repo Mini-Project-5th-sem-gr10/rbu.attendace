@@ -11,6 +11,7 @@ import OneSubjectAttendace from "./components/Students/OneSubjectAttendace";
 import TeacherDashboard from "./components/Teacher/TeacherDashboard";
 import TeacherOneSubject from "./components/Teacher/TeacherOneSubject";
 import OneTeacherAttendanceTeacherView from "./components/Teacher/OneTeacherAttendanceTeacherView";
+import Home from "./components/Home/Home";
 
 function App() {
   const { isLoading } = useContext(AuthContext);
@@ -31,6 +32,7 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Navbar />}>
+          <Route path="/" element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="student" element={<StudentDashBoard />} />
           <Route
